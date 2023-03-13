@@ -4,12 +4,11 @@ matplotlib
 numpy
 statsmodels
 scipy
-sklearn
+scikit-learn
 pmdarima
 isodate
-bokeh
+bokeh==2.4.3
 monthdelta
 jupyter
-tensorflow-macos; sys_platform == 'darwin'
-tensorflow; sys_platform == 'linux'
+tensorflow
 keras
