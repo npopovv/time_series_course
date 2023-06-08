@@ -212,7 +212,7 @@ class TimeSeriesPredictor(BaseEstimator):
         feature_matrix = self.enrich(lag_matrix)
 
         X, y = feature_matrix.drop('lag_0', axis=1), feature_matrix['lag_0']
-        self.model.fit(X, y, *args, **kwargs)
+        self.model.fit(X, y, *args)#, **kwargs)
         self.fitted = True
 
     def predict_next(self, ts_lags, n_steps=1):
